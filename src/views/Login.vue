@@ -76,7 +76,7 @@ export default {
 <style>
 .background50{
     height: 100vh;
-    background: #adabe1;
+    background: black;
     background-image: url(/background.jpg);
     background-size: cover;
 }
