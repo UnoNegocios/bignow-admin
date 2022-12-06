@@ -101,7 +101,7 @@
           </v-list>
       <template v-slot:append>
         <div style="color:#9ca3a5; font-size: 12px;" class="pa-2">
-          TORCRM | v1.0.0 <v-icon> mdi-settings</v-icon>
+          TORCRM | v1.0.1 <v-icon> mdi-settings</v-icon>
         </div>
       </template>
     </v-navigation-drawer>

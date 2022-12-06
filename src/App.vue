@@ -19,6 +19,7 @@ import axios from "axios"
 import App from "../src/views/App"
 import Login from "../src/views/Login"
 export default {
+  mixins: [update],
   name: 'App',
   components:{ 
     'app':App, 
