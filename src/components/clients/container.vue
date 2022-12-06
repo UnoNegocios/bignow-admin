@@ -1,5 +1,5 @@
 <template>
-  <v-card class="elevation-0 pa-12">
+  <v-card class="elevation-0 ma-12 px-12 py-6">
     <v-card-title>
         Pacientes
         <v-spacer></v-spacer>

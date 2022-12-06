@@ -5,10 +5,15 @@ import Dashboard from '../components/Dashboard.vue'
 Vue.use(VueRouter)
 
   const routes = [
-  {
+  /*{
     path: '/',
     name: 'Dashboard',
     component: Dashboard
+  },*/
+  {
+    path: '/',
+    name: 'Clients',
+    component: () => import('../components/clients/container.vue')
   },
   {
     path: '/calendar',

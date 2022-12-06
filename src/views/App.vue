@@ -3,13 +3,12 @@
     <!-- sidebar -->
     <v-navigation-drawer light style="border-right:2px #f4f5fa solid; font-family:Oswald;" v-model="drawer" :clipped="$vuetify.breakpoint.lgAndUp" app> <!--style="box-shadow: 0px 13px 5px 0px rgb(112 112 115 / 30%)!important;z-index: 9;"-->
       <!-- sidebar-menu -->
-          
           <v-list class="d-flex flex-column ma-0" height="100%">
             <img width="120px"  class="mx-auto mt-4" src="/logo.png">
             <v-list-item class="mt-auto px-0">
               <v-spacer>
               <!-- dashboard -->
-              <v-tooltip right open-delay="1000">
+              <!--v-tooltip right open-delay="1000">
                 <template v-slot:activator="{ on, attrs }">
                   <v-list-item to="/" link v-bind="attrs" v-on="on">
                     <v-list-item-action class="mr-3">
@@ -21,10 +20,10 @@
                   </v-list-item>
                 </template>
                 <span>Pantalla de inicio</span>
-              </v-tooltip>
+              </v-tooltip-->
 
               <!-- dashboard -->
-              <v-tooltip right open-delay="1000">
+              <!--v-tooltip right open-delay="1000">
                 <template v-slot:activator="{ on, attrs }">
                   <v-list-item to="/calendar" link v-bind="attrs" v-on="on">
                     <v-list-item-action class="mr-3">
@@ -36,7 +35,7 @@
                   </v-list-item>
                 </template>
                 <span>Pantalla de inicio</span>
-              </v-tooltip>
+              </v-tooltip-->
 
               <!-- pacientes -->
               <v-tooltip right open-delay="1000">
@@ -54,7 +53,7 @@
               </v-tooltip>
 
               <!-- menús -->
-              <v-tooltip right open-delay="1000">
+              <!--v-tooltip right open-delay="1000">
                 <template v-slot:activator="{ on, attrs }">
                   <v-list-item to="/menus" link v-bind="attrs" v-on="on">
                     <v-list-item-action class="mr-3">
@@ -66,7 +65,7 @@
                   </v-list-item>
                 </template>
                 <span>Lista de menus alimenticios para dietas</span>
-              </v-tooltip>
+              </v-tooltip-->
 
               <!-- videos -->
               <v-tooltip right open-delay="1000">
@@ -83,9 +82,6 @@
                 <span>Lista de videos para rutinas de entrenamiento</span>
               </v-tooltip>
 
-
-
-
               <v-tooltip right open-delay="1000">
                 <template v-slot:activator="{ on, attrs }">
                   <v-list-item to="/training" link v-bind="attrs" v-on="on">
@@ -100,15 +96,9 @@
                 <span>Lista de videos para rutinas de entrenamiento</span>
               </v-tooltip>
 
-              
-
-              
               </v-spacer>
-            
             </v-list-item >
           </v-list>
-          
-
       <template v-slot:append>
         <div style="color:#9ca3a5; font-size: 12px;" class="pa-2">
           TORCRM | v1.0.0 <v-icon> mdi-settings</v-icon>
