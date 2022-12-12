@@ -8,7 +8,7 @@
             </v-row>
             <v-row class="ma-0">
                 <v-row v-if="videos_by_categories[index].videos == undefined" class="ma-0 py-6 pl-7 pr-5">
-                    <v-progress-linear  color="#e12826" indeterminate rounded height="6">{{apiCall(category.id)}}</v-progress-linear>
+                    <v-progress-linear  color="#e12826" indeterminate rounded height="6"></v-progress-linear>
                 </v-row>
                 <v-col v-else cols="3" v-for="(video, index) in getVideos(category.id)" :key="index">
                     <v-card class="elevation-0">
@@ -58,6 +58,11 @@ export default {
         return{
             createDialog:false,
             videos_by_categories:[{category_id:'', videos:undefined}]
+        }
+    },
+    created(){
+        for(var i=0; i<15; i++){
+            this.apiCall(i+1)
         }
     },
     computed:{

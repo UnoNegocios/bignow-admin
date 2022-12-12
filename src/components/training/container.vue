@@ -79,7 +79,7 @@
                                 secondary-color="#000000">
                             </mux-player>
                             <v-img v-else src="/video404.jpeg" height="105px" ></v-img>
-                            <v-card-title style="font-weight:500; font-size:14px;" class="pt-0 pb-2">
+                            <v-card-title style="font-weight:500; font-size:14px; line-height:18px;" class="pt-0 pb-2 my-2">
                                 {{exercice.title}}
                             </v-card-title>
                             <v-card-subtitle style="font-weight:500; font-size:12px;" class="pb-1">

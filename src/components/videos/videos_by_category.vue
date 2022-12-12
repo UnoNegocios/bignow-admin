@@ -47,10 +47,12 @@ export default {
         }
     },
     created(){
+        /*
         axios.get(process.env.VUE_APP_BACKEND_ROUTE + "api/v1/videos?itemsPerPage=999&filter[categories.id]=" +  this.$route.params.id).then(response => {
             this.videos = response.data.data
             this.loading = false
         })
+        */
     }
 }
 </script>
